@@ -1,12 +1,18 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
   --primary-font-family: "Roboto", sans-serif;
   --secondary-font-family: "Montserrat", sans-serif;
   --menu-margin: 40px 140px;
+  --primary-bg-color: #202020;
+}
+
+body {
+  background-color: var(--primary-bg-color);
 }
 
 .menu {
@@ -14,7 +20,7 @@
 }
 
 .custom-bg-dark {
-  background-color: #202020 !important;
+  background-color: var(--primary-bg-color) !important;
 }
 
 .menu-logo {
@@ -125,3 +131,96 @@
   }
 }
 /* End styling header part */
+
+/* Start styling content part */
+
+.content-section {
+  padding-top: 120px;
+}
+
+.content-section img {
+  /* padding: 0 40px; */
+}
+
+.image-section {
+  margin: 0 60px;
+}
+
+.image-section img {
+  height: 280px;
+}
+
+.cover {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 445px) {
+  .content-section {
+    padding-top: 80px;
+  }
+
+  .image-section img {
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .image-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 446px) and (max-width: 768px) {
+  .content-section {
+    padding-top: 80px;
+  }
+
+  .image-section img {
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .image-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .content-section {
+    padding-top: 80px;
+  }
+
+  .image-section img {
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .image-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .content-section {
+    padding-top: 80px;
+  }
+
+  .image-section img {
+    margin: 15px 0;
+    margin: 0;
+  }
+
+  .image-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+  }
+}
+
+/* end styling content part */
