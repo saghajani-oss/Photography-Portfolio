@@ -40,6 +40,17 @@ body {
   line-height: 18px;
 }
 
+.about-section h1,
+.gallery-section h1 {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0.1em;
+  color: white;
+  margin-bottom: 30px;
+}
+
 /* Start styling header part */
 .hero {
   background-image: url(../images/bg.png);
@@ -212,16 +223,6 @@ body {
   margin-bottom: 30px;
 }
 
-.about-section h1 {
-  font-family: var(--primary-font-family);
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
-  letter-spacing: 0.1em;
-  color: white;
-  margin-bottom: 30px;
-}
-
 .about-section i {
   background-color: var(--primary-bg-color);
   color: white;
@@ -290,3 +291,23 @@ body {
 }
 
 /* End styling about page */
+
+/* start styling gallery page */
+.gallery-content {
+  margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+  .image-section div {
+    margin-bottom: 30px;
+  }
+
+  .gallery-content {
+  margin-top: 50px;
+}
+
+.gallery-section .row {
+  margin-top: 0;
+}
+}
+/* End styling gallery page */
