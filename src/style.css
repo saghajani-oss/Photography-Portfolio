@@ -41,7 +41,8 @@ body {
 }
 
 .about-section h1,
-.gallery-section h1 {
+.gallery-section h1,
+.contact-section h1 {
   font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 64px;
@@ -218,7 +219,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 00.1em;
+  letter-spacing: 0.1em;
   margin-top: 60px;
   margin-bottom: 30px;
 }
@@ -311,3 +312,40 @@ body {
 }
 }
 /* End styling gallery page */
+
+
+
+/* start styling contact page */
+
+.contact-content {
+  margin-top: 140px;
+}
+
+.contact-content h2 {
+  color: #f65282;
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-content i {
+  color: white;
+  font-size: 14px;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.contact-content p {
+  display: inline;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+}
+
+/* End styling contact page */
