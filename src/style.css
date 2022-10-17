@@ -23,6 +23,19 @@ body {
   background-color: var(--primary-bg-color) !important;
 }
 
+.about-section h1,
+.gallery-section h1,
+.contact-section h1 {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0.1em;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Start styling menu part */
 .menu-logo {
   margin: var(--menu-margin);
 }
@@ -38,19 +51,17 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  transition: all 0.5s ease-in-out;
 }
 
-.about-section h1,
-.gallery-section h1,
-.contact-section h1 {
-  font-family: var(--primary-font-family);
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
-  letter-spacing: 0.1em;
-  color: white;
-  margin-bottom: 30px;
+.custom-menu-links a:hover {
+  color: #f65282;
 }
+
+.customs-active {
+  color: #f65282 !important;
+}
+/* End styling menu part */
 
 /* Start styling header part */
 .hero {
@@ -304,16 +315,14 @@ body {
   }
 
   .gallery-content {
-  margin-top: 50px;
-}
+    margin-top: 50px;
+  }
 
-.gallery-section .row {
-  margin-top: 0;
-}
+  .gallery-section .row {
+    margin-top: 0;
+  }
 }
 /* End styling gallery page */
-
-
 
 /* start styling contact page */
 
@@ -347,5 +356,55 @@ body {
   line-height: 30px;
   color: white;
 }
-
 /* End styling contact page */
+
+/* start styling footer */
+.footer {
+  min-height: 100px;
+  background-color: #282323;
+  margin-top: 100px;
+}
+
+.footer-image {
+  display: block;
+  padding: 40px 150px;
+}
+
+.footer-social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.footer-social-icon i {
+  background-color: var(--primary-bg-color);
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #282323;
+  margin-right: 20px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right span {
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+}
+
+@media (max-width: 445px) {
+  .footer-right span {
+    font-size: 11px;
+  }
+}
+
+/* end styling footer */
