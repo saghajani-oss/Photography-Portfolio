@@ -15,10 +15,6 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-.menu {
-  width: 100%;
-}
-
 .custom-bg-dark {
   background-color: var(--primary-bg-color) !important;
 }
@@ -36,6 +32,11 @@ body {
 }
 
 /* Start styling menu part */
+
+.menu {
+  width: 100%;
+}
+
 .menu-logo {
   margin: var(--menu-margin);
 }
@@ -60,6 +61,21 @@ body {
 
 .customs-active {
   color: #f65282 !important;
+}
+
+@media (max-width: 991px) {
+  .custom-menu-links a {
+  margin-left: 0px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .custom-menu-links {
+  margin: 40px 60px;
+}
+  .custom-menu-links a {
+  padding-left: 20px;
+}
 }
 /* End styling menu part */
 
