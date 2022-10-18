@@ -270,6 +270,10 @@ body {
   line-height: 30px;
 }
 
+.camera-type:hover {
+  color: white;
+}
+
 .camera-type img {
   padding-right: 10px;
 }
