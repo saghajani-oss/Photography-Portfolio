@@ -32,50 +32,52 @@ body {
 }
 
 /* Start styling menu part */
-
 .menu {
-  width: 100%;
+  padding: 20px 0;
+}
+.custom-menu-bg {
+  background-color: var(--primary-bg-color) !important;
 }
 
 .menu-logo {
-  margin: var(--menu-margin);
+  padding-right: 700px;
 }
 
-.custom-menu-links {
-  margin: var(--menu-margin);
+.custom-navbar li {
+  padding-right: 15px;
 }
 
-.custom-menu-links a {
-  color: white;
-  margin-left: 30px;
+.custom-nav-link {
   font-family: var(--primary-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  transition: all 0.5s ease-in-out;
+  color: white;
 }
 
-.custom-menu-links a:hover {
+.custom-active a {
   color: #f65282;
 }
 
-.customs-active {
-  color: #f65282 !important;
-}
-
 @media (max-width: 991px) {
-  .custom-menu-links a {
-    margin-left: 0px;
-  }
+.menu {
+  padding: 20px 15px;
+}
+  .menu-logo {
+  padding-right: 0px;
+}
+.custom-navbar li {
+  padding-right: 0px;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .custom-menu-links {
-    margin: 40px 60px;
-  }
-  .custom-menu-links a {
-    padding-left: 20px;
-  }
+  .menu-logo {
+  padding-right: 450px;
+}
+.custom-navbar li {
+  padding-right: 10px;
+}
 }
 /* End styling menu part */
 
